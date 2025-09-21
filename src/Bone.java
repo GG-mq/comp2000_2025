@@ -1,10 +1,6 @@
 import java.awt.Color;
 import java.awt.Graphics;
 
-/**
- * Bone - can be eaten by dogs.
- * Demonstrates basic inheritance.
- */
 public class Bone extends FoodItem {
     
     public Bone(int x, int y) {
