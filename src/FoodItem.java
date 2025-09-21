@@ -1,9 +1,5 @@
 import java.awt.Color;
 
-/**
- * Simple food item.
- * Demonstrates basic inheritance and interface implementation.
- */
 public class FoodItem extends Item implements Consumable {
     private String animalType;
     
