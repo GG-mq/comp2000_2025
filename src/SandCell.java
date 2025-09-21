@@ -1,10 +1,6 @@
 import java.awt.Color;
 import java.awt.Graphics;
 
-/**
- * Sand cell - beige cell with sand dots.
- * Demonstrates basic inheritance.
- */
 public class SandCell extends CellType {
     
     public SandCell() {
@@ -13,7 +9,6 @@ public class SandCell extends CellType {
     
     @Override
     protected void drawPattern(Graphics g, int x, int y, int size) {
-        // Draw sand grains
         g.setColor(new Color(200, 170, 140));
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
