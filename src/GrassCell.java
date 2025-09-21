@@ -1,10 +1,6 @@
 import java.awt.Color;
 import java.awt.Graphics;
 
-/**
- * Grass cell - green cell with grass pattern.
- * Demonstrates basic inheritance.
- */
 public class GrassCell extends CellType {
     
     public GrassCell() {
