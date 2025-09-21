@@ -2,10 +2,6 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Point;
 
-/**
- * Simple base class for items.
- * Demonstrates basic inheritance.
- */
 public abstract class Item {
     protected String name;
     protected Color color;
@@ -20,24 +16,17 @@ public abstract class Item {
     }
     
     public void paint(Graphics g) {
-        // Draw shadow
         g.setColor(new Color(0, 0, 0, 50));
         g.fillOval(x + 1, y + 1, size, size);
-        
-        // Draw main item
         g.setColor(color);
         g.fillOval(x, y, size, size);
-        
-        // Draw border
         g.setColor(Color.BLACK);
         g.drawOval(x, y, size, size);
-        
-        // Draw item details (overridden by subclasses)
         drawDetails(g);
     }
     
     protected void drawDetails(Graphics g) {
-        // Default: no details
+
     }
     
     public boolean contains(Point p) {
